@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<!-- $crimson: #990000;
+$cream: #EDEBEB;
+$midnight_dark: #01426A;
+$midnight: #006298;
+$majestic_dark: #512A44;
+$majestic: #66435A;
+$iu_black: #191919;
+$base_black: #243142; -->
+
+<!-- ironweed: #4f2984;
+TTUslate: #526a95;
+TTUblue: #36a8a4;
+TTUgreen: #b2c26e;
+goldenrod: #ffdd00;
+
+
+sapphire: #0074b2;
+amazonite: #36a8a4;
+emerald: #6bd074; 
+-->
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Measure. Print. Enhance.</title>
+  <script type="module" crossorigin src="./assets/index-6e1b4239.js"></script>
+  <link rel="stylesheet" href="./assets/index-8f71ba0f.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background-color="#191919">
+				<div class="full">
+					<h2>Measure. Print. Enhance.</h2>
+					<h5>Magnetic Fields and the neutron Electric Dipole Moment</h5>
+					<p>Austin Reid</p>
+				</div>
+				<div class="footer_l">
+					<img src="./assets/Tech_Logo_Gold-4d29a0f8.png" style="height:160px">
+				</div>
+				<div class="footer_r">
+					<p>
+						East Tennessee State University<br>
+						2024 02 26
+					</p>
+				</div>
+			</section>
+			<!-- 				<section><div class="full"><h3 style="margin-bottom: 0px;">Where'd you come from, where will you go?</h3><p><ol style='font-size:1.7ex;'><li> Davidson College <b>BS</b> 🏀</li><li> North Carolina State University <b>Ph.D.</b> 🐺 <br>Fellowship to École Normale Supérieure 🥖</li><li> Indiana University Center for Exploration of Energy and Matter <b>Postdoc</b> 🌽</li><li> Trinity College Connecticut <b>Visiting Assistant Prof.</b> 😷</li><li> Indiana University CEEM <b>Senior Postdoc</b> ✈️🧳🌶️</li><li> Last year: Istanbul, Berlin, etc. ✈️</li><li> Fall 2023: Tennessee Technological University <b>Assistant Professor</b> 🦅</li></ol></p></div><div class="footer_l_img"></div></section> -->
+			<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>Overview</h2>
+				</div>
+				<div class="full">
+					<ol>
+						<li>Relationship between asymmetry and creation of matter</li>
+						<li>Introduction to NMR based searches for symmetry violation</li>
+						<li>Beyond State of the Art: better magnetic fields</li>
+						<li>What comes next</li>
+					</ol>
+				</div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-background-color="#0074b2" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="full">
+					<blockquote style="width: 55%;">
+						In the beginning the Universe was created. This has made a lot of people angry and has been
+						widely regarded as a bad move.<br>&mdash;Douglas Adams
+					</blockquote>
+				</div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-background-color="#0074b2" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="full">
+					<h1>Something from Nothing</h1>
+				</div>
+				<div class="footer_mid">
+					What's the question?
+				</div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-state="mass_energy" data-background-color="#EDEBEB" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="full">
+					<div id="mass_energy_bar" style="width: 850px; height: 600px;"></div>
+				</div>
+				<div class="footer_mid fragment fade-in" id='sweep_pie'>
+					<blockquote style="background-color: #000000; color:#0074b2;">
+						Where did all this stuff come from?
+					</blockquote>
+				</div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>How to make Matter</h2>
+				</div>
+				<div class="full">
+					<ol>
+						<li>0 Baryons &rarr; 1 Baryon</li>
+						<li>$B$ more likely than $\overline{B}$</li>
+						<li>Unable to reverse</li>
+					</ol>
+				</div>
+				<div class="footer_mid"><p>Something from nothing</p></div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h3>How to make Matter: the Sakharov Criteria</h3>
+				</div>
+				<div class="full">
+					<ol>
+						<li>Baryon number violation</li>
+						<li>C/CP violating process</li>
+						<li>Out of thermal equilibrium</li>
+					</ol>
+				</div>
+				<div class="footer_mid"><p>Something from nothing</p></div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-auto-animate data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>Baryogenesis</h2>
+				</div>
+				<div class="full">
+					<p>$\eta\equiv\frac{B-\overline{B}}{B+\overline{B}}\approx\frac{n_B}{n_\gamma}$</p>
+					<p>With perfect matter/antimatter symmetry, $\eta=0$</p>
+				</div>
+				<div class="footer_mid"><p>Something from nothing</p></div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-auto-animate data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>Baryogenesis</h2>
+				</div>
+				<div class="full">
+					<p>$\eta\equiv\frac{B-\overline{B}}{B+\overline{B}}\approx\frac{n_B}{n_\gamma}$</p>
+					<p>With perfect matter/antimatter symmetry, $\eta=0$</p>
+					<p>$\eta = 6.08\times 10^{-10}$</p>
+				</div>
+				<div class="footer_mid"><p>Something from nothing</p></div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-auto-animate data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>Baryogenesis</h2>
+				</div>
+				<div class="full">
+					<p>$\eta\equiv\frac{B-\overline{B}}{B+\overline{B}}\approx\frac{n_B}{n_\gamma}$</p>
+					<p>With perfect matter/antimatter symmetry, $\eta=0$</p>
+					<p>$\eta = 6.08\times 10^{-10}$</p>
+					<p>$\eta_\mathrm{SM}\approx 10^{-18}$</p>
+				</div>
+				<div class="footer_mid"><p>Something from nothing</p></div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+<!-- 				<section data-auto-animate>
+					<div class="titlebar">
+						<h2>Baryogenesis</h2>
+					</div>
+					<div class="full">
+						<p>$\eta\equiv\frac{B-\overline{B}}{B+\overline{B}}\approx\frac{n_B}{n_\gamma}$</p>
+						<p>With perfect matter/antimatter symmetry, $\eta=0$</p>
+						<p>$\eta = 6.08\times 10^{-10}$</p>
+						<p>$\xcancel{\eta_\mathrm{SM}\approx 10^{-18}}$</p>
+					</div>
+					<div class="footer_mid"><p>Something from nothing</p></div>
+					<div class="footer_l_img"></div>
+				</section> -->
+				<section data-auto-animate data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="titlebar">
+						<h2>Baryogenesis</h2>
+					</div>
+					<div class="full">
+						<p>$\eta\equiv\frac{B-\overline{B}}{B+\overline{B}}\approx\frac{n_B}{n_\gamma}$</p>
+						<p>With perfect matter/antimatter symmetry, $\eta=0$</p>
+						<p>$\eta = 6.08\times 10^{-10}$</p>
+						<p>$\xcancel{\eta_\mathrm{SM}\approx 10^{-18}}$</p>
+						<p>$\eta_\mathrm{SM}\approx 0$</p>
+					</p>
+				</div>
+				<div class="footer_mid"><p>Something from nothing</p></div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+				<!-- <section>
+					<div class="titlebar">
+						<h2>Baryogenesis</h2>
+					</div>
+					<div class="full">
+						$$\eta\equiv\frac{B-\overline{B}}{B+\overline{B}}\approx\frac{n_B}{n_\gamma}$$
+						<p>With perfect matter/antimatter symmetry, $\eta=0$</p>
+						<span class="fragment fade-in" data-fragment-index="1">
+							$$\eta = 6.08\times 10^{-10}$$
+						</span>
+						<p class="fragment fade-in-then-out" data-fragment-index="2">
+								$$\eta_\mathrm{SM}\approx 10^{-18}$$
+							</span>
+						</p>
+						<p class="fragment fade-in" data-fragment-index="3">
+							$$\eta_\mathrm{SM}\approx 0$$
+						</p>
+					</div>
+					<div class="footer_mid"><p>Something from nothing</p></div>
+					<div class="footer_l_img"></div>
+				</section> -->
+				<section data-background-color="#191919" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="full">
+						<img class="r-stretch fragment fade-out" src="./assets/milkyway-d5466c35.jpg">
+					</div>
+					<aside class="notes">
+						3000 stars visible at night, under ideal
+						conditions. If there were 100 million
+						times less matter in the universe, what
+						would the night sky look like?
+					</aside>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-background-color="#006298" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="full">
+						<h1>Fundamental Symmetries</h1>
+					</div>
+					<div class="footer_mid">A little rigor</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+			</section>
+			<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>Discrete Symmetries <span class="fragment fade-in">in Nature</span></h2>
+				</div>
+				<div class="full">
+					<ol>
+						<li>Charge conjugation, <b>C</b><span class="fragment fade-in">: Pion Decay</span></li>
+						<li>Parity (mirror reflection), <b>P</b><span class="fragment fade-in">: Weak force, e.g.
+						neutron &beta; decay</span></li>
+						<li>Time reversal, <b>T</b><span class="fragment fade-in">: Kaon decay</span></li>
+					</ol>
+					<p class="fragment fade-in">
+						$$\eta > \eta_\mathrm{SM} = 0$$
+					</p>
+				</div>
+				<div class="footer_mid">You can talk about combined symmetries:<br><b>CPT</b> is Lorentz invariant, so
+					<b>CP</b>=<b>T</b>
+				</div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>EDM Violates Several Symmetries</h2>
+				</div>
+				<div class="half_1">
+					<table>
+						<thead>
+							<tr>
+								<th>&nbsp;</th>
+								<th>C</th>
+								<th>P</th>
+								<th>T</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>$\phantom{\mu\hat{J}\cdot}\vec{B}$</td>
+								<td>-</td>
+								<td>+</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>$\phantom{\mu\hat{J}\cdot}\hat{J}$</td>
+								<td>-</td>
+								<td>+</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>$\mu\hat{J}\cdot\vec{B}$</td>
+								<td>+</td>
+								<td>+</td>
+								<td>+</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="half_2">
+					<table>
+						<thead>
+							<tr>
+								<th>&nbsp;</th>
+								<th>C</th>
+								<th>P</th>
+								<th>T</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>$\phantom{d\hat{J}\cdot}\vec{E}$</td>
+								<td>-</td>
+								<td>-</td>
+								<td>+</td>
+							</tr>
+							<tr>
+								<td>$\phantom{d\hat{J}\cdot}\hat{J}$</td>
+								<td>-</td>
+								<td>+</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>$d\hat{J}\cdot\vec{E}$</td>
+								<td>+</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="footer_mid">
+					$$\mathcal{H} = \mu\hat{J}\cdot\vec{B} + d\hat{J}\cdot\vec{E}$$
+				</div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-state="edm_cpt" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="full">
+					<div id="2_edm_cpt" style="width: 850px; height: 600px;"></div>
+				</div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<!-- 				<section>
+					<div class="full">
+						<img src="images/EDM_PT.png" style="width: 50%">
+					</div>
+					<div class="footer_l_img"></div>
+				</section> -->
+				<section data-state="precision_nmr_questions" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="titlebar">
+						<h2>Precision NMR questions</h2>
+					</div>
+					<div class="half_1">
+						<ol>
+							<li class="fragment semi-fade-out" data-fragment-index="2"> I know the <u>field</u> and
+								<i>where</i> it is, and I want to know <b>what</b> it is.
+							</li>
+							<li class="fragment semi-fade-out" data-fragment-index="3"> I know the <u>field</u> and
+								<b>what</b> it is, and I want to know <i>where</i> it is.
+							</li>
+							<li> I know <b>what</b> and <i>where</i> it is, and I want to know the <u>field</u>.</li>
+						</ol>
+					</div>
+					<div class="half_2">
+						<div class="r-stack">
+							<img class="fragment fade-in-then-out" data-fragment-index="1" src="./assets/chem_nmr-3ee2e867.png" width="100%">
+							<img class="fragment fade-in-then-out" data-fragment-index="2" src="./assets/mri-086f61ae.jpg" width="100%">
+						</div>
+						<!-- <div id="test_figure_geo" style="width: 450px; height: 450px;"> </div> -->
+					</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-state="edm_freq_shift" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="third_1">
+						$$\mathcal{H} = \mu \hat{J}\cdot\vec{B}+d\hat{J}\cdot\vec{E}$$
+						$$\omega = \gamma B \pm 2 e d_n E/\hbar$$
+						<p><em>d exaggerated for clarity</em></p>
+					</div>
+					<div class="third_23">
+						<div id="edm_freq" style="width: 500px; height: 500px;"></div>
+					</div>
+					<aside class="notes">
+						Torques aligned: faster precession. Torques opposed: slower precession.
+					</aside>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="titlebar">
+						<h2>NMR on neutrons</h2>
+					</div>
+					<div class="full">
+						<ol>
+							<li>Initial polarization can be close to 100%</li>
+							<li>Apply fields (both static and RF)</li>
+							<li>Measure final polarization<br>
+							n.b. can only measure polarization destructively</li>
+						</ol>
+					</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-state="standard-rabi" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<!-- <div class="footer_l_img"></div> -->
+					<div class="titlebar">
+						<h2>Rabi Spin Flips</h2>
+					</div>
+					<div class="full">
+						<img src="./assets/Rabi-10ce8aad.png" style="height:400px"><br>
+
+						<p>
+							Figure by Doug Wong
+						</p>
+					</div>
+				</section>
+				<section data-state="standard-ramsey-0" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<!-- <div class="footer_l_img"></div> -->
+					<div class="titlebar">
+						<h2>Ramsey Interferometry</h2>
+					</div>
+					<div class="full">
+						<img src="./assets/Ramsey_can-8d59c1cc.png" style="height:400px"><br>
+
+						<p>
+							Canonical representation of Ramsey Sequence
+						</p>
+					</div>
+				</section>
+				<section data-state="standard-ramsey" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<!-- <div class="footer_l_img"></div> -->
+					<div class="titlebar">
+						<h2>Ramsey Interferometry</h2>
+					</div>
+					<div class="full">
+						<img src="./assets/Illustration-of-the-Ramsey-experiment-in-the-Bloch-sphere-representation-of-the-qubit-c0605965.png" style="height:400px"><br>
+
+						<a href="https://www.researchgate.net/figure/Illustration-of-the-Ramsey-experiment-in-the-Bloch-sphere-representation-of-the-qubit_fig39_47041555" target="_blank">Illustration of the Ramsey Experiment, by Juergen Lisenfeld</a>
+					</div>
+				</section>
+				<section data-state="rabi_sequence" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="titlebar">
+						<h2>Rabi Sequence</h2>
+					</div>
+					<div class="third_2">
+						<div id="rabi" style="width: 320px; height: 400px;"></div>
+					</div>
+					<div class="third_3">
+						<div id="rabi2" style="width: 320px; height: 400px;"></div>
+						<!-- <div id="test_figure_geo" style="width: 450px; height: 450px;"> </div> -->
+					</div>
+					<div class="third_1">
+						<p id="rabi_status">&nbsp;</p>
+						<p class="fragment fade-in-then-out" id="play_rabi">Animating</p>
+						<p class="fragment fade-in" id="stop_rabi">Stopped</p>
+					</div>
+					<div class="footer_mid" id="rabi_thinking">&nbsp;</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-state="ramsey_sequence" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="titlebar">
+						<h2>Ramsey Sequence</h2>
+					</div>
+					<div class="third1">
+						<p id="ramsey_status">&nbsp;</p>
+						<p class="fragment fade-in-then-out" id="play_ramsey">Animating</p>
+						<p class="fragment fade-in" id="stop_ramsey">Stopped</p>
+					</div>
+					<div class="third_23">
+						<div id="ramsey" style="width: 400px; height: 400px;"></div>
+						<!-- <div id="test_figure_geo" style="width: 450px; height: 450px;"> </div> -->
+					</div>
+					<div class="footer_mid" id="ramsey_thinking">&nbsp;</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-state="standard-ramsey-0" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<!-- <div class="footer_l_img"></div> -->
+					<div class="full">
+						<img src="./assets/Ramsey_fringe-54aa2624.png" style="height:400px"><br>
+
+						<p>
+							Ramsey Interferometry measurement fringe
+						</p>
+					</div>
+				</section>
+				<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<!-- <div class="footer_l_img"></div> -->
+					<div class="half_1">
+						<h2>nEDM: beamline</h2>
+						<h3>
+							$$\mathcal{H} = \mu\hat{J}\cdot\vec{B} + d\hat{J}\cdot\vec{E}$$
+						</h3>
+						<h3>
+							$$\omega=\gamma B \pm 2 e d_n E/\hbar$$
+						</h3>
+					</div>
+					<div class="half_2">
+						<img src="./assets/ramseybeam-fda9097a.jpg">
+					</div>
+					<div class ="full fragment fade-in" style="z-index:100">
+						<img src="./assets/ramseys_fringes-937d0687.png" style="height:500px">
+					</div>
+					<aside class="notes">
+						500K neutron spectrum, 65meV: Epithermal (3.5 km/s)<br>
+						Geostationary orbital velocity: 3.1 km/s
+					</aside>
+				</section>
+				<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<!-- <div class="footer_l_img"></div> -->
+					<div class="full">
+						<img src="./assets/newspaper-42abe301.jpeg" style="height:400px"><br>
+						<img class="fragment fade in" src="./assets/PRL-ramsey-d56e67ee.png" style="height:200px">
+					</div>
+				</section>
+				<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="titlebar">
+						<h3>Which Symmetries are "good" Symmetries?</h3>
+					</div>
+					<div class="full">
+						<table style="border-collapse: collapse;">
+							<colgroup>
+								<col style="width: 180px">
+								<col style="width: 850px">
+							</colgroup>
+							<tbody>
+								<tr>
+									<td align='right'>1950</td>
+									<td><b>P</b>arity (mirror) symmetry was believed to be conserved.</td>
+								</tr>
+								<tr>
+									<td align='right'>1956</td>
+									<td>Lee and Yang: <b>P</b> is not tested in weak force</td>
+								</tr>
+								<tr>
+									<td align='right'>Jan 1957</td>
+									<td>Madame Wu observes <b>P</b> violation in neutron β decay</td>
+								</tr>
+								<tr>
+									<td align='right'>May 1957</td>
+									<td>Smith, Purcell, Ramsey publish null nEDM</td>
+								</tr>
+								<tr>
+									<td align='right'>1964</td>
+									<td>Cronin and Fitch observe <b>CP</b> violation in neutral Kaon</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-state="nedm_history_page" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<!-- <div class="titlebar">nEDM over time (90% CI, e cm)</div> -->
+					<div class="full">
+						&nbsp;
+						<div id="nedm_history" style="width: 800px; height: 600px;"></div>
+					</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="titlebar">
+						<h3>Better Measurements Through Statistics</h3>
+					</div>
+					<div class="half_1">
+						<ol>
+							<li>$\alpha$: polarization*analyzing power</li>
+							<li>T: precession time</li>
+							<li>E: Electric field strength</li>
+							<li>N: observed particle number</li>
+						</ol> 
+					</div>
+					<div class="half_2">
+						$$\delta d_n=\frac{\hbar}{2\alpha T E \sqrt{N}}$$
+					</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="titlebar">
+						<h2>Very Slow (in French): Très Lent</h2>
+					</div>
+					<div class="third_23">
+						<img src="./assets/DressTurntable-25-e6fedc4f.png" style="height:450px"><br>
+					</div>
+					<div class="third_1">
+						Dress et al. 1977
+						<ul>
+							<li>1.5K neutrons</li>
+							<li>0.2 meV</li>
+							<li>190 m/s</li>
+							<li>430 miles per hour</li>
+						</ul>
+
+						$d_n\leq 3\times 10^{−24}~\mathrm{e}\cdot\mathrm{cm}$
+					</p>
+				</div>
+				<!-- <div class="footer_l_img"></div> -->
+				<aside class="notes">
+					1.5K neutron: 0.2 meV, 190 m/s, 430 miles per hour
+					Passenger jet: 470 miles per hour
+				</aside>
+			</section>
+			<section data-state="debroglie" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>de Broglie Wavelengths</h2>
+				</div>
+				<div class="half_1" style="font-size:1.5ex;">
+					<p>
+						Matter looks very different to particles with different momenta
+					</p>
+					$$\lambda=\frac{h}{p}$$
+					<img src="./assets/NuclearWell-c5dbbff1.png" style="width:250px"><br>
+					<a href="https://physics.uwo.ca/~mhoude2/courses/PDF%20files/physics2102/Ch8-Atomic_Nucleus.pdf" target="_blank">Atomic Nucleus model by Martin Houde</a>
+				</div>
+				<div class="half_2">
+					<img src="./assets/Bragg-c9080032.gif" style="width:450px"><br>
+				</div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-state="D2_animate_page" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h3>Superthermal UCN Production Process</h3>
+				</div>
+				<div class="full" style="z-index:100">
+					<div id="D2_animate" style="width: 800px; height: 600px;"></div>
+				</div>
+				<div class="footer_mid"  style="font-size:1.5ex;">
+					R. Golub, J.M. Pendlebury, Super-thermal sources of ultra-cold neutrons,<br> Physics Letters A, Volume 53, Issue 2, 1975
+				</div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-state="UCN-pincushion" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="half_1">
+					<h3>
+						Material Potential for Confining UCN
+					</h3>
+					<img src="./assets/nails-9c8e0ec0.png" style="width:450px"><br>
+					<a href="https://www.mentalfloss.com/article/83935/science-behind-bed-nails" target="_blank">Mental Floss: Bed of Nails</a>
+				</div>
+				<div class="half_2">
+					<table style="border-collapse: collapse;">
+						<colgroup>
+							<col style="width: 130px">
+							<col style="width: 200px">
+							<col style="width: 200px">
+						</colgroup>
+						<thead>
+							<tr>
+								<th></th>
+								<th>V<sub>F</sub> (neV)</th>
+								<th>$v_c$ (m/s)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>D<sub>2</sub>O</td>
+								<td>170</td>
+								<td>5.6</td>
+							</tr>
+							<tr>
+								<td>Cu</td>
+								<td>170</td>
+								<td>5.6</td>
+							</tr>
+							<tr>
+								<td>Fe</td>
+								<td>220</td>
+								<td>6.5</td>
+							</tr>
+							<tr>
+								<td>Ni</td>
+								<td>230</td>
+								<td>6.8</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>
+						$$V_F=\frac{2\pi\hbar^2N b_c}{m_n}$$
+						$$v_c = \sqrt{\frac{2V_F}{m_n}}$$
+					</p>
+				</div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-state="UCN" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>Ultra-Cold Neutrons (UCN)</h2>
+				</div>
+				<div class="half_1">
+					<ul>
+						<li>milliKelvin "temperature"</li>
+						<li>&lt;300 neV</li>
+						<li>Extremely slow neutrons</li>
+						<li>$v > $ 5&ndash;8 m/s</li>
+						<li>$\lambda>$ 50 nm</li>
+					</ul>
+				</div>
+				<div class="half_2">
+					<img src="./assets/SlowRude-920e0099.jpg" style="width:500px" class="fragment fade-out" data-fragment-index="1">
+				</div>
+				<div class="half_2">
+					<ul>
+						<li>Neutron + Gravity: 102 neV/m</li>
+						<li>Neutron + Magnetism: 60 neV/T</li>
+						<li>Benefits?</li>
+					</ul>
+					<ul>
+						<li>Long storage time (&beta; limited)</li>
+						<li>Low radiation background</li>
+						<li>100% polarization</li>
+					</ul>
+				</div>
+				<!-- <div class="footer_l_img"></div> -->
+				<aside class="notes">
+					Frederico Fischer's 100m record (20.41 seconds, he was 95 years old)
+				</aside>
+			</section>
+			<section data-state="zeroVee" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h3>Systematics</h3>
+					<h4>zero v zero problems?</h4>
+				</div>
+				<div class="full">
+					<p>Reducing $\vec{v}$ increases observation time and improves $B'\approx B - \frac{\vec{v}\times\vec{E}}{c^2}$</p>
+					<p class="fragment fade-in" style="margin-top:2.0ex;">Bottled neutrons $\langle\vec{v}\rangle = 0\quad \stackrel{?}{\Rightarrow}\quad \langle\vec{v}\times\vec{E}\rangle=0$?</p>
+					<p class="fragment fade-in" style="margin-top:2.0ex;">Magnetic Field Gradients: $\nabla\cdot\vec{B}=0$&nbsp;&nbsp;&nbsp;so&nbsp;&nbsp;&nbsp;$\partial_x B_x+ \partial_y B_y+ \partial_z B_z = 0$</p>
+					<p class="fragment fade-in" style="margin-top:2.0ex;">Some math happens: $\delta\omega\propto E \partial_z B_z$</p>
+				</div>
+				<div class="footer_mid">
+					<p class="fragment fade-in"> 						<!--<div style="border: 2px solid #990000;"> -->
+						Experimental Signal: $\delta\omega = \frac{4d_nE}{h}$
+					</p>
+				</div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-state="gradspec" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>Gradient Specification</h2>
+				</div>
+				<div class="third_1">
+					<ul>
+						<li>Scalar Potential</li>
+						<li>Stream-functions</li>
+					</ul>
+				</div>
+				<div class="third_23" style="font-size:1.5ex">
+					$$d_{\mathrm{Hg}\to n}^{\mathrm{false}}=-\frac{\hbar |\gamma_n\gamma_{\mathrm{Hg}}|}{2c^2}\sum\limits_{l,m} G_{l,m}\langle\rho \Pi_{\rho,l,m}\rangle$$
+
+					$$\frac{1}{T_{2,\mathrm{mag}}}=\gamma_n^2\sum\limits_{l,l',m}G_{l,m}G_{l',m}\int_0^\infty\langle \Pi_{z,l,m}^c(0)\Pi_{z,l',m}^c(t)\rangle\,\mathrm{d}t$$
+
+					<p>Abel et al 10.1103/PhysRevA.99.042112</p>
+				</div>
+				<div class="footer_mid">n.b. Can specify with spherical harmonics!</div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-auto-animate data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>The Magnetic Scalar Potential</h2>
+				</div>
+				<div class="footer_mid">
+					<p style="font-size:1.5ex;">Thanks to Chris Crawford. For more detail, see one of his talks here: <a target="_blank" href="https://youtu.be/LTuk-sz-ApE">youtu.be/LTuk-sz-ApE</a></p>
+				</div>
+				<div class="third_12">
+					<p style="font-size:2ex;">
+						as a theoretical tool, [the magnetic scalar potential] is of limited interest &mdash;DJ Griffiths
+					</p>
+				</div>
+				<div class="third_3">
+					<img src="./assets/CrawfordCos-02a8bf64.jpg" style="width: 100%">
+				</div>
+<!-- 				<div class="footer_l">
+					<img src="/images/Tech_Seal_Purple.png" style="background-repeat: no-repeat; background-size: contain; height: 68px; width: 68px;">
+				</div> -->
+				<aside class="notes">
+					Ampere's law (zero curl without currents)
+					Gauss's law (zero divergence, always)
+					K is surface current density
+				</aside>
+			</section>
+			<section data-auto-animate data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>The Magnetic Scalar Potential</h2>
+				</div>
+				<div class="footer_mid">
+					<p style="font-size:1.5ex;">Thanks to Chris Crawford. For more detail, see one of his talks here: <a target="_blank" href="https://youtu.be/LTuk-sz-ApE">youtu.be/LTuk-sz-ApE</a></p>
+				</div>
+				<div class="third_12">
+					<p style="font-size:2ex;">
+						as a theoretical tool, [the magnetic scalar potential] is of limited interest &mdash;DJ Griffiths
+					</p>
+					<ul>
+						<li>In free space: $\vec{\nabla}\times\vec{H}=0$,&nbsp;&nbsp;&nbsp;$\vec{\nabla}\cdot\vec{H}=0$</li>
+					</ul>
+				</div>
+				<div class="third_3">
+					<img src="./assets/CrawfordCos-02a8bf64.jpg" style="width: 100%">
+				</div>
+				<!-- 				<div class="footer_l"><img src="/images/Tech_Seal_Purple.png" style="background-repeat: no-repeat; background-size: contain; height: 68px; width: 68px;"></div> -->
+				<aside class="notes">
+					Ampere's law (zero curl without currents)
+					Gauss's law (zero divergence, always)
+					K is surface current density
+				</aside>
+			</section>
+			<section data-auto-animate data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>The Magnetic Scalar Potential</h2>
+				</div>
+				<div class="footer_mid">
+					<p style="font-size:1.5ex;">Thanks to Chris Crawford. For more detail, see one of his talks here: <a target="_blank" href="https://youtu.be/LTuk-sz-ApE">youtu.be/LTuk-sz-ApE</a></p>
+				</div>
+				<div class="third_12">
+					<p style="font-size:2ex;">
+						as a theoretical tool, [the magnetic scalar potential] is of limited interest &mdash;DJ Griffiths
+					</p>
+					<ul>
+						<li>In free space: $\vec{\nabla}\times\vec{H}=0$,&nbsp;&nbsp;&nbsp;$\vec{\nabla}\cdot\vec{H}=0$</li>
+						<li>$\vec{H}=-\vec{\nabla}U$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$\nabla^2U=0$</li>
+					</ul>
+				</div>
+				<div class="third_3">
+					<img src="./assets/CrawfordCos-02a8bf64.jpg" style="width: 100%">
+				</div>
+				<!-- 				<div class="footer_l"><img src="/images/Tech_Seal_Purple.png" style="background-repeat: no-repeat; background-size: contain; height: 68px; width: 68px;"></div> -->
+				<aside class="notes">
+					Ampere's law (zero curl without currents)
+					Gauss's law (zero divergence, always)
+					K is surface current density
+				</aside>
+			</section>
+			<section data-auto-animate data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>The Magnetic Scalar Potential</h2>
+				</div>
+				<div class="footer_mid">
+					<p style="font-size:1.5ex;">Thanks to Chris Crawford. For more detail, see one of his talks here: <a target="_blank" href="https://youtu.be/LTuk-sz-ApE">youtu.be/LTuk-sz-ApE</a></p>
+				</div>
+				<div class="third_12">
+					<p style="font-size:2ex;">
+						as a theoretical tool, [the magnetic scalar potential] is of limited interest &mdash;DJ Griffiths
+					</p>
+					<ul>
+						<li>In free space: $\vec{\nabla}\times\vec{H}=0$,&nbsp;&nbsp;&nbsp;$\vec{\nabla}\cdot\vec{H}=0$</li>
+						<li>$\vec{H}=-\vec{\nabla}U$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$\nabla^2U=0$</li>
+						<li>$\hat{n}\times-\vec{\nabla}(U_\mathrm{out}-U_\mathrm{in})=\vec{K}$</li>
+					</ul>
+				</div>
+				<div class="third_3">
+					<img src="./assets/CrawfordCos-02a8bf64.jpg" style="width: 100%">
+				</div>
+<!-- 				<div class="footer_l">
+					<img src="/images/Tech_Seal_Purple.png" style="background-repeat: no-repeat; background-size: contain; height: 68px; width: 68px;">
+				</div> -->
+				<aside class="notes">
+					Ampere's law (zero curl without currents)
+					Gauss's law (zero divergence, always)
+					K is surface current density
+				</aside>
+			</section>
+			<section data-auto-animate data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>The Magnetic Scalar Potential</h2>
+				</div>
+				<div class="footer_mid">
+					<p style="font-size:1.5ex;">Thanks to Chris Crawford. For more detail, see one of his talks here: <a target="_blank" href="https://youtu.be/LTuk-sz-ApE">youtu.be/LTuk-sz-ApE</a></p>
+				</div>
+				<div class="third_12">
+					<p style="font-size:2ex;">
+						as a theoretical tool, [the magnetic scalar potential] is of limited interest &mdash;DJ Griffiths
+					</p>
+					<ul>
+						<li>In free space: $\vec{\nabla}\times\vec{H}=0$,&nbsp;&nbsp;&nbsp;$\vec{\nabla}\cdot\vec{H}=0$</li>
+						<li>$\vec{H}=-\vec{\nabla}U$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$\nabla^2U=0$</li>
+						<li>$\hat{n}\times-\vec{\nabla}(U_\mathrm{out}-U_\mathrm{in})=\vec{K}$</li>
+						<li>$-\Delta U = I$</li>
+					</ul>
+				</div>
+				<div class="third_3">
+					<img src="./assets/CrawfordCos-02a8bf64.jpg" style="width: 100%">
+				</div>
+<!-- 				<div class="footer_l">
+					<img src="/images/Tech_Seal_Purple.png" style="background-repeat: no-repeat; background-size: contain; height: 68px; width: 68px;">
+				</div> -->
+				<aside class="notes">
+					Ampere's law (zero curl without currents)
+					Gauss's law (zero divergence, always)
+					K is surface current density
+				</aside>
+			</section>
+			<section data-state="StreamFunctions" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>Stream Functions via bfieldTools</h2>
+				</div>
+				<div class="full">
+					<blockquote>
+						From the theory of harmonic potentials, we know that U can  be determined uniquely in the volume (up to a constant) when either the potential or the normal derivative of the potential is specified on the boundary enclosing the volume. Thus, any external source distribution whose potential reproduces the boundary conditions of a given U, can be used to generate U in the volume. &mdash;Mäkinen
+					</blockquote>
+					<a href="https://bfieldtools.github.io">https://bfieldtools.github.io</a>
+				</div>
+				<div class="footer_mid">doi:10.1063/5.0016090</div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-state="SurfTriangle" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>Surface Triangulation</h2>
+				</div>
+				<div class="half_1">
+					<img src="./assets/bfieldtools_elements-8d59a4fc.jpeg" style="width: 100%">
+				</div>
+				<div class="half_2">
+					<img src="./assets/bfieldtools_currents-3f05eefa.jpeg" style="width:100%">
+				</div>
+				<div class="footer_mid">Mäkinen 2020, Zetter 2020</div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-state="coilshield" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar"><h2>Coil+Shielding Interactions</h2></div>
+				<div class="full">
+					<img src="./assets/bfieldtools_shielding-3b7e483f.jpg" style="width:100%">
+				</div>
+				<!-- <div class="footer_l_img"></div> -->
+			</section>
+			<section data-state="testcurrents" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+				<div class="titlebar">
+					<h2>Test Geometry</h2>
+				</div>
+				<div class="half_1">
+
+					<ol>
+						<li> Test MSR </li>
+						<ul>
+							<li>60” x 52” x 70”</li>
+							<li>1.52m x 1.32m x 1.78m</li>
+						</ul>
+						<li style="margin-top:1.5ex;"> Four disconnected planes</li>
+						<li>Cylindrical training volume</li>
+						<li>Bfieldtools current pattern</li>
+					</ol>
+				</div>
+				<div class="half_2">
+					<!-- <figure> -->
+						<img src="./assets/comsol_currentpaths-f8ad8540.png" style="width: 100%">
+						<!-- </figure> -->
+					</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-state="testfields" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="titlebar">
+						<h2>Test Geometry</h2>
+					</div>
+					<div class="half_1">
+
+						<ol>
+							<li> Test MSR </li>
+							<ul>
+								<li>60” x 52” x 70”</li>
+								<li>1.52m x 1.32m x 1.78m</li>
+							</ul>
+							<li style="margin-top:1.5ex;"> Four disconnected planes</li>
+							<li>Bfieldtools current pattern</li>
+							<li>COMSOL simulation</li>
+							<li> G<sub>1,0</sub> magnetic field</li>
+							<!-- <li>Cylindrical training volume</li> -->
+						</ol>
+					</div>
+					<div class="half_2">
+						<div id="test_figure_fields" style="width: 450px; height: 550px;"></div>
+						<!-- <div id="test_figure_geo" style="width: 450px; height: 450px;"> </div> -->
+					</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="titlebar">
+						<h2>Fabrication for tests</h2>
+					</div>
+					<div class="third_12">
+						<ul>
+							<li>3D points from bfieldTools to PDF via ReportLab (Python library) </li>
+							<li>Print in strips with poster printer</li>
+							<li>Join at alignment marks, carefully glue magnet wire. Pay attention to direction arrows!</li>
+							<li>Attach four panels to 80-20 frame, place inside MSR</li>
+						</ul>
+						<div style="border: 2px solid #990000;">
+							Coils exist thanks to Chen-Yu Liu, Alicen Houff, and Greg Gill
+						</div>
+					</div>
+					<div class="third_3">
+						<img src="./assets/PrintedPage-0dda43d2.jpg" style="width: 100%">
+					</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-state="sweep" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="full">
+						<img src="./assets/LANL_panel-bb4e1ddb.jpeg" style="width:100%;">
+					</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-state="hdrive" data-background-color="#191919">
+					<div class="full">
+						<div style="width: 30%; float: left;">
+							<div id="test_mapper" style="width: 100%; height: 450px;"> </div>
+							<div>
+								<!-- border: 2px solid red; -->
+								<p style="font-size:1.5ex; color:#006298">H-drive 2D actuator<br>
+								2x Bartington 3-axis fluxgate magnetometers</p>
+							</div>
+						</div>
+						<div style="width: 35%; float: left;">
+							<img src="./assets/mapper0-8cf6d3dd.jpeg" style="width:100%;">
+						</div>
+						<div style="width: 34%; float: left;">
+							<img src="./assets/mapper1-f364afc4.jpeg" style="width:100%;">
+						</div>
+					</div>
+				</section>
+				<section data-state="sweep" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="half_1">
+						<img src="./assets/degraded_0-4ef4e53b.png" style="width: 100%">
+					</div>
+					<div class="half_2">
+						<img src="./assets/degraded_1-bb3a27c0.png" style="width: 100%">
+					</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-state="sweep" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="half_1">
+						<h2>In aggregate:</h2>
+						<ol>
+							<li>G<sub>10</sub>+G<sub>0</sub> mode</li>
+							<li>Gradients are linear</li>
+							<li>~150 nT from 100mA</li>
+						</ol>
+						<p>&nbsp;</p>
+						<div style="border: 2px solid #ffdd00; font-size:1.5ex;">
+							Measurement happened thanks to Jared Brewington and Steve Clayton
+						</div>
+					</div>
+					<div class="half_2">
+						<img src="./assets/degraded_2-c12715b5.png" style="width:100%;">
+					</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-state="sweep" data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="half_1">
+						<h2>Degraded MSR</h2>
+						<ol>
+							<li>Door adjacent to “weak” coil is more accessible.</li>
+							<li>Degaussing electronics were disconnected for full-scale room work</li>
+							<li>Magnetized door has reduced response to applied field.</li>
+						</ol>
+					</div>
+					<div class="half_2">
+						<img src="./assets/degraded_comsol-10242625.png" style="width:100%;">
+					</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<!-- <div class="titlebar"></div> -->
+					<div class="third_1">
+						<h3>
+							Coil+Wall
+						</h3>
+						<p>
+							Asymmetric mumetal contribution!
+						</p>
+					</div>
+					<div class="third_23">
+						<img src="./assets/energized_mu-b5bc5199.png" style="width:100%;">
+					</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="titlebar">
+						<!-- <h2>Comsol: $10000 \approx 0.05 \times \infty$</h2> -->
+						<h2>Comsol: 10000 &approx; 0.05 x &infin;</h2>
+					</div>
+					<div class="third_12" style="font-size:0.9em">
+						<ol>
+							<li>BfieldTools compensates for <em>perfect</em> mu metal.</li>
+							<li>Our MSR is nice, but not perfect.</li>
+							<li>Nice is somewhere between 1 and $\infty$</li>
+							<li>Build two coils: uncorrected ($\mu_\mathrm{rel}=1$) and fully corrected
+							($\mu_\mathrm{rel}=\infty$)</li>
+							<li>Use both with a current bridge, find current ratio that recovers desired harmonic
+								<em>G<sub>l,m</sub></em>.
+							</li>
+							<li>Given ratio &mu;, linearly interpolate scalar potentials that generate the coils.</li>
+						</ol>
+					</div>
+					<div class="third_3">
+						<div class="r-stack">
+							<img class="fragment fade-out" data-fragment-index="1" src="./assets/comsol_perfectmu-7b6cfce2.png"
+							style="width:100%;">
+							<img class="fragment fade-in-then-out" data-fragment-index="1" src="./assets/comsol_zeromu-83194ddb.png"
+							style="width:100%;">
+							<img class="fragment" src="./assets/comsol_blend-3fc32fbc.png" style="width:100%;">
+						</div>
+					</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-background-video="speedy_coil.mp4">
+					<div class="full">
+						<h2>Make 8 more panels and try again!</h2>
+					</div>
+				</section>
+				<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="full">
+						<div style="margin: 0px 0px; width:800px;grid-template-columns: 400px 400px;display:grid;grid-row: auto auto;grid-column-gap: 0px;grid-row-gap: 0px;padding: 0px;">
+							<div style="display:inline-block; object-fit: contain;"><img style="width:400px;" src="./assets/data_100_0-495cbf95.png"></div>
+							<div style="display:inline-block; object-fit: contain;"><img style="width:400px;" src="./assets/data_90_10-1aef6397.png"></div>
+							<div style="display:inline-block; object-fit: contain;"><img style="width:400px;" src="./assets/data_0_100-09606a0d.png"></div>
+							<div style="display:inline-block; object-fit: contain;"><img style="width:400px;" src="./assets/data_-90_-10-d985b8ac.png"></div>
+						</div>
+					</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<div class="third_12">
+						<figure>
+							<img src="./assets/data_100_0-495cbf95.png" style="height:230px">
+							<img src="./assets/comsol_zeromu-83194ddb.png" style="height:230px">
+						</figure>
+						<figure>
+							<img src="./assets/data_0_100-09606a0d.png" style="height:230px">
+							<img src="./assets/comsol_perfectmu-7b6cfce2.png" style="height:230px">
+						</figure>
+					</div>
+					<div class="third_3">
+						<img src="./assets/data_-90_-10-d985b8ac.png" style="height:230px">
+						<img src="./assets/comsol_blend-3fc32fbc.png" style="height:230px">
+					</div>
+					<!-- <div class="footer_l_img"></div> -->
+				</section>
+				<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+					<!-- <div class="titlebar"></div> -->
+					<div class="half_1">
+						<h3>
+							B Decomposition and Fit
+						</h3>
+						<h4>
+							Abel et al. (n2EDM, PSI)
+						</h4>
+						<ul>
+							<li>Harmonic Polynomial basis</li>
+							<li>Least squares fit to specified order</li>
+							<li>Parallelize via <i>Ray</i></li>
+							<li>Can recover arbitrary field profiles with $\vec{B}$</li>
+							<li>Mostly works with $|B|$</li>
+						</div>
+						<div class="half_2">
+							<img src="./assets/AbelBasis-e81b7203.png" style="width:75%;">
+						</div>
+						<!-- <div class="footer_l_img"></div> -->
+					</section>
+					<section data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+						<!-- <div class="footer_l_img"></div> -->
+						<div class="half_1">
+							<img src="./assets/c0-1-a35d7293.png" style="width:50%;">
+							<img src="./assets/c00-07a6082a.png" style="width:50%;">
+							<img src="./assets/c01-2a36c6f9.png" style="width:50%;">
+						</div>
+						<div class="half_2">
+							<img src="./assets/c1-2-226e7f30.png" style="width:50%;">
+							<img src="./assets/c1-1-137ec7a4.png" style="width:50%;">
+							<img src="./assets/c10-abdc611f.png" style="width:50%;">
+							<img src="./assets/c11-37c6da20.png" style="width:50%;">
+							<img src="./assets/c12-0f351398.png" style="width:50%;">
+						</div>
+					</section>
+					<section data-background-color=black data-background-image="/images/Tech_Seal_Purple.png" data-background-size="100px" data-background-position="bottom 10px left 10px">
+						<div class="titlebar" style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+							<div>
+								<img src="./assets/LANL-LDRD-a42f8048.png" style="height:55px">
+							</div>
+							<div>
+								<img src="./assets/NSF-smol-65fb1f60.png" style="height:70px">
+							</div>
+						</div>
+						<div class="full">
+							<ol style="margin-top:0ex;">
+								<li>Stream function coil specification is easier than scalar potential coil specification.</li>
+								<li>Gradient coils can be generated from discrete panels.</li>
+								<li>Larger panels depend more strongly on coupling to mu</li>
+								<li>You can approximate real (but unknown) mumetal with a pair of gradient coils</li>
+							</ol>
+							<ul style="margin-top:0ex;">
+								<li>This work was supported by Los Alamos National Laboratory LDRD and the National Science Foundation, grants PHY-1828512 and PHY-1614545</li>
+								<li>Thanks to you!</li>
+							</ul>
+						</div>
+						<div class="footer_mid" style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+							<div>
+								<img src="./assets/ARR-bd46151e.jpg" style="height:70px">
+							</div>
+							<div>&nbsp;Austin Reid: areid@tntech.edu</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			
+		</body>
+
+		</html>
